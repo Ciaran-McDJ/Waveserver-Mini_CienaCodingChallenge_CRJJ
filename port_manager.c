@@ -154,6 +154,7 @@ void handle_inject_fault(const udp_message_t *request, udp_message_t *response)
 {
     port_t *port = get_port_from_request(request, response);
     if (!port) return;
+    if (port->admin_enabled == false) return;
 
     port->fault_active = true;
     recalculate_oper_state(port);
@@ -165,6 +166,7 @@ void handle_clear_fault(const udp_message_t *request, udp_message_t *response)
 {
     port_t *port = get_port_from_request(request, response);
     if (!port) return;
+    if (port->admin_enabled == false) return;
 
     port->fault_active = false;
     recalculate_oper_state(port);
