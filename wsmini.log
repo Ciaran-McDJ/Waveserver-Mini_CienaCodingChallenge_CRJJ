@@ -25,3 +25,36 @@
 [26-03-26 20:26:05] [DEBUG] [port_mgr] [port_manager.c:108] MSG_GET_PORT_INFO: Returning info for port_idx-3
 [26-03-26 20:26:05] [DEBUG] [port_mgr] [port_manager.c:108] MSG_GET_PORT_INFO: Returning info for port_idx-4
 [26-03-26 20:26:05] [DEBUG] [port_mgr] [port_manager.c:108] MSG_GET_PORT_INFO: Returning info for port_idx-5
+[26-03-26 20:52:12] [INFO] [port_mgr] [port_manager.c:30] Initialized ports
+[26-03-26 20:52:12] [INFO] [conn_mgr] [conn_manager.c:13] Initialize connection table
+[26-03-26 20:52:12] [INFO] [traffic_mgr] [traffic_manager.c:16] Traffic stats initialized
+[26-03-26 20:52:17] [INFO] [port_mgr] [port_manager.c:189] My CRON JOB YIPPEE
+[26-03-26 20:52:22] [INFO] [port_mgr] [port_manager.c:189] My CRON JOB YIPPEE
+[26-03-26 20:52:27] [INFO] [port_mgr] [port_manager.c:189] My CRON JOB YIPPEE
+[26-03-26 20:52:32] [INFO] [port_mgr] [port_manager.c:189] My CRON JOB YIPPEE
+[26-03-26 20:52:37] [INFO] [port_mgr] [port_manager.c:189] My CRON JOB YIPPEE
+[26-03-26 20:52:40] [INFO] [port_mgr] [port_manager.c:32] Initialized ports
+[26-03-26 20:52:40] [INFO] [conn_mgr] [conn_manager.c:13] Initialize connection table
+[26-03-26 20:52:40] [INFO] [traffic_mgr] [traffic_manager.c:16] Traffic stats initialized
+[26-03-26 20:52:45] [INFO] [port_mgr] [port_manager.c:191] My CRON JOB YIPPEE
+[26-03-26 20:52:50] [INFO] [port_mgr] [port_manager.c:191] My CRON JOB YIPPEE
+[26-03-26 20:52:55] [INFO] [port_mgr] [port_manager.c:191] My CRON JOB YIPPEE
+[26-03-26 20:53:00] [INFO] [port_mgr] [port_manager.c:191] My CRON JOB YIPPEE
+[26-03-26 20:53:05] [INFO] [port_mgr] [port_manager.c:191] My CRON JOB YIPPEE
+[26-03-26 20:53:10] [INFO] [port_mgr] [port_manager.c:191] My CRON JOB YIPPEE
+[26-03-26 20:53:15] [INFO] [port_mgr] [port_manager.c:191] My CRON JOB YIPPEE
+[26-03-26 20:53:20] [INFO] [port_mgr] [port_manager.c:191] My CRON JOB YIPPEE
+[26-03-26 20:53:25] [INFO] [port_mgr] [port_manager.c:33] Initialized ports
+[26-03-26 20:53:25] [INFO] [conn_mgr] [conn_manager.c:13] Initialize connection table
+[26-03-26 20:53:25] [INFO] [traffic_mgr] [traffic_manager.c:16] Traffic stats initialized
+[26-03-26 20:53:29] [INFO] [cli] [cli.c:665] CLI started
+[26-03-26 20:53:30] [INFO] [port_mgr] [port_manager.c:192] My CRON JOB YIPPEE
+[26-03-26 20:53:35] [INFO] [port_mgr] [port_manager.c:192] My CRON JOB YIPPEE
+[26-03-26 20:53:40] [INFO] [port_mgr] [port_manager.c:192] My CRON JOB YIPPEE
+[26-03-26 20:53:45] [INFO] [port_mgr] [port_manager.c:192] My CRON JOB YIPPEE
+[26-03-26 20:53:50] [INFO] [port_mgr] [port_manager.c:192] My CRON JOB YIPPEE
+[26-03-26 20:53:55] [INFO] [port_mgr] [port_manager.c:192] My CRON JOB YIPPEE
+[26-03-26 20:54:00] [INFO] [port_mgr] [port_manager.c:192] My CRON JOB YIPPEE
+[26-03-26 20:54:05] [INFO] [port_mgr] [port_manager.c:192] My CRON JOB YIPPEE
+[26-03-26 20:54:10] [INFO] [port_mgr] [port_manager.c:192] My CRON JOB YIPPEE
+[26-03-26 20:54:15] [INFO] [port_mgr] [port_manager.c:192] My CRON JOB YIPPEE

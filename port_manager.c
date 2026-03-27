@@ -1,6 +1,10 @@
 #include "common.h"
 #include <errno.h>
 #include <stdint.h>
+#include <stdlib.h>
+#include <unistd.h> //For sleep()
+#include <pthread.h>
+
 
 #define SERVICE_NAME "port_mgr"
 
@@ -177,6 +181,18 @@ bool dispatch(const udp_message_t *req, udp_message_t *resp)
     return send_reply;
 }
 
+/**
+ * Runs every 5 seconds to log status of all the ports
+ * 
+ */
+void *health_scan_cron_job(void *arg)
+{
+    while (1) {
+        sleep(5);
+        LOG(LOG_INFO, "My CRON JOB YIPPEE");
+    }
+}
+
 int main()
 {
     log_init(SERVICE_NAME);
@@ -194,6 +210,11 @@ int main()
         LOG(LOG_ERROR, "Failed to create notify socket - exiting");
         return 1;
     }
+
+    // Make a thread to run the health scan cron job
+    // NOTE: Not certain if this is best place to create this. Need to make sure everythign is setup before trying to print port status
+    pthread_t thread;
+    pthread_create(&thread, NULL, health_scan_cron_job, NULL);
 
     while (true)
     {
