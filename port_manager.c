@@ -158,7 +158,7 @@ void handle_inject_fault(const udp_message_t *request, udp_message_t *response)
 
     port->fault_active = true;
     recalculate_oper_state(port);
-    // LOG(LOG_INFO, "Port admin-disabled: port_idx=%d", port->id - 1);
+    LOG(LOG_INFO, "Port fault-injected: port_idx=%d", port->id - 1);
     response->status = STATUS_SUCCESS;
 }
 
@@ -170,7 +170,7 @@ void handle_clear_fault(const udp_message_t *request, udp_message_t *response)
 
     port->fault_active = false;
     recalculate_oper_state(port);
-    // LOG(LOG_INFO, "Port admin-disabled: port_idx=%d", port->id - 1);
+    LOG(LOG_INFO, "Port fault-cleared: port_idx=%d", port->id - 1);
     response->status = STATUS_SUCCESS;
 }
 
