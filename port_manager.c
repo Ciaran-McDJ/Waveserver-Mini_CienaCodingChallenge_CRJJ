@@ -152,26 +152,24 @@ void handle_delete_port(const udp_message_t *request, udp_message_t *response)
 
 void handle_inject_fault(const udp_message_t *request, udp_message_t *response)
 {
-    LOG(LOG_INFO, "'inject fault' function is being run - not implemented yet");
-    // port_t *port = get_port_from_request(request, response);
-    // if (!port) return;
+    port_t *port = get_port_from_request(request, response);
+    if (!port) return;
 
-    // port->admin_enabled = false;
-    // recalculate_oper_state(port);
+    port->fault_active = true;
+    recalculate_oper_state(port);
     // LOG(LOG_INFO, "Port admin-disabled: port_idx=%d", port->id - 1);
-    // response->status = STATUS_SUCCESS;
+    response->status = STATUS_SUCCESS;
 }
 
 void handle_clear_fault(const udp_message_t *request, udp_message_t *response)
 {
-    LOG(LOG_INFO, "'clear fault' function is being run - not implemented yet");
-    // port_t *port = get_port_from_request(request, response);
-    // if (!port) return;
+    port_t *port = get_port_from_request(request, response);
+    if (!port) return;
 
-    // port->admin_enabled = false;
-    // recalculate_oper_state(port);
+    port->fault_active = false;
+    recalculate_oper_state(port);
     // LOG(LOG_INFO, "Port admin-disabled: port_idx=%d", port->id - 1);
-    // response->status = STATUS_SUCCESS;
+    response->status = STATUS_SUCCESS;
 }
 
 
